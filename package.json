@@ -6,8 +6,8 @@
   "scripts": {
     "build": "node build.js",
     "start": "electron .",
-    "packageDarwin": "electron-packager .  --platform=darwin --arch=x64 --out=./dist --asar --icon icon.ico",
-    "packageWin": "electron-packager . --platform=win32 --arch=x64  --out=./dist --asar --icon icon.ico",
+    "packageDarwin": "electron-packager .  --platform=darwin --arch=x64 --out=./dist --asar  --icon=icon.icns",
+    "packageWin": "electron-packager . --platform=win32 --arch=x64  --out=./dist --asar --icon icon.ico --ignore=\"(dist|dest|docs|.gitignore|LICENSE|README.md)\"",
     "packageLinux": "electron-packager .  --platform=linux --arch=x64 --out=./dist --asar --icon icon.ico"
   },
   "repository": "https://github.com/electron/electron-quick-start",
